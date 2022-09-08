@@ -1,0 +1,15 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главный шаблон</title>
+</head>
+<body>
+<h1>Начало шаблона</h1>
+<h1><a href="https://www.w3schools.com/">W3shools </a></h1>
+<h1><a href="{% url 'cars' %}">главная страница</a></h1>
+{% block page_content%}
+{% endblock %}
+<h1>Конец шаблона</h1>
+</body>
+</html>
