@@ -13,7 +13,11 @@
     <h1>Здесь могла быть ваша реклама</h1>
     <ul>
     {% for car in cars %}
-        <li> {{ car }} </li>
+        <h4> car: {{car.title}} </h4>
+        <h4> speed: {{car.speed}} </h4>
+        <h4>description: {{car.description}}</h4>
+        <h4>create:{{car.year_create}}</h4>
+        <h4>====================</h4>
     {% endfor %}
 
     </ul>
