@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поставщик</title>
+</head>
+<body>
+    <h1>Форма связанная с моделью</h1>
+     <form action="{% url 'provider' %}" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Добавить</button>
+    </form>
+
+
+</body>
+</html>
